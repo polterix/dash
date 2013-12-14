@@ -1,0 +1,47 @@
+[
+  {
+    "id": 0,
+    "title": "Synergy",
+    "type": "jauge"
+  },
+  {
+    "id": 1,
+    "title": "News",
+    "width": 2,
+    "type": "text"
+  },
+  {
+    "id": 2,
+    "title": "Value convergence",
+    "type": "chart"
+  },
+  {
+    "id": 3,
+    "title": "Current valuation",
+    "height": 2,
+    "width": 2,
+    "type": "number"
+  },
+  {
+    "id": 4,
+    "title": "Carte #04"
+  },
+  {
+    "id": 5,
+    "width": 2,
+    "title": "Carte #05"
+  },
+  {
+    "id": 6,
+    "title": "Carte #06"
+  },
+  {
+    "id": 7,
+    "height": 2,
+    "title": "Carte #07"
+  },
+  {
+    "id": 8,
+    "title": "Carte #08"
+  }
+]
