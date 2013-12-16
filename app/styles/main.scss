@@ -98,6 +98,11 @@ html {font-size : 100%;}
 
 body { background:#333; height:100%; padding:0;}
 
+
+$card-width : 17rem;
+$card-height : $card-width*1.1;
+$card-margin : 0.5rem;
+
 main {
   background:#d5d5d5;
   padding : 0.5rem 0.5rem 0 0.5rem;
@@ -105,16 +110,13 @@ main {
   box-shadow:0 1px 2px #222;
 }
 
-$card-width : 12rem;
-$card-height : $card-width;
-$card-margin : 0.5rem;
 
 .card {
-  padding: 0.5rem 1.5rem;
+  padding: $card-margin $card-margin*3;
   box-shadow:0 1px 2px #aaa;
   background:white;
   margin: 0 $card-margin $card-margin 0;
-  border-radius:0.25rem;
+  border-radius:$card-margin/2;
   user-select:none;
   width: $card-width;
   height: $card-height;
@@ -130,23 +132,20 @@ $card-margin : 0.5rem;
 }
 
 
-h1 {
+.card h1 {
   font-size:2rem;
-  font-weight:200;
-  margin-top:1rem;
-}
-
-strong {
-  font-weight:400;
-  color:#539D00;
-}
-
-h2 {
-  font-size:.9rem;
-  line-height:2.5;
-  color:gray;
   font-weight:400;
   margin-top:0.5rem;
+  text-align: center;
+}
+
+.card h2 {
+  font-size:.9rem;
+  line-height:1.5;
+  color:gray;
+  font-weight:400;
+  margin-top:0;
+  text-align: center;
 }
 
 /**** Isotope transitions ****/
@@ -154,11 +153,11 @@ h2 {
 .isotope,
 .isotope .isotope-item {
   /* change duration value to whatever you like */
-  -webkit-transition-duration: 0.4s;
-     -moz-transition-duration: 0.4s;
-      -ms-transition-duration: 0.4s;
-       -o-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition-duration: 0.3s;
+     -moz-transition-duration: 0.3s;
+      -ms-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .isotope {

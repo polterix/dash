@@ -1,8 +1,9 @@
 [
   {
     "id": 0,
-    "title": "Synergy",
-    "type": "jauge"
+    "title": "Cafés / jours",
+    "value" : "12",
+    "type": "number"
   },
   {
     "id": 1,
@@ -13,18 +14,20 @@
   {
     "id": 2,
     "title": "Value convergence",
+    "height": 2,
     "type": "chart"
   },
   {
     "id": 3,
     "title": "Current valuation",
-    "height": 2,
     "width": 2,
-    "type": "number"
+    "type": "jauge"
   },
   {
     "id": 4,
-    "title": "Carte #04"
+    "title": "Carte #04",
+    "value" : "1",
+    "type": "number"
   },
   {
     "id": 5,

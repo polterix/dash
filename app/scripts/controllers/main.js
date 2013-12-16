@@ -8,10 +8,11 @@ angular.module('dashApp')
         $scope.cards = data;
       });
 
-  $scope.hello = "Hello";  
     $scope.addCard = function (){
       var id = Math.floor((Math.random()*10)+1);
-      $scope.cards.push({"id":id,"title":"Test " + id});
+      var width = Math.floor((Math.random()*2)+1);
+      var height = Math.floor((Math.random()*2)+1);
+      $scope.cards.push({"id":id,"title":"Test " + id,"width":width,"height":height});
     };
     
     $scope.removeCard = function (){
