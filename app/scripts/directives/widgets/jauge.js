@@ -7,7 +7,7 @@ angular.module('dashApp')
         data: '='
       },
       restrict: 'E',
-      templateUrl: 'views/widget-jauge.html',
+      templateUrl: 'views/widgets/jauge.html',
       link: function(scope, element, attrs) {
 
       }

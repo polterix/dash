@@ -7,7 +7,7 @@ angular.module('dashApp')
         data: '='
       },
       restrict: 'E',
-      templateUrl: 'views/widget-number.html',
+      templateUrl: 'views/widgets/number.html',
       link: function(scope, element, attrs) {
 
         var timeoutId;
