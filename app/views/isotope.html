@@ -1,6 +1,0 @@
-<section class="card card-width-{{item.width}} card-height-{{item.height}}" ng-repeat="item in items" card-id="{{item.id}}" id="card-{{item.id}}" ng-switch on="item.type">
-	<widget-jauge data="item" ng-switch-when="jauge"></widget-jauge>
-	<widget-chart data="item" ng-switch-when="chart"></widget-chart>
-	<widget-number data="item" ng-switch-when="number"></widget-number>
-	<widget-text data="item" ng-switch-default></widget-text> 
-</section>

@@ -1,6 +1,6 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
-@import 'sass-bootstrap/lib/bootstrap';
+@import "sass-bootstrap/lib/bootstrap";
 
 .browsehappy {
     margin: 0.2em 0;
@@ -16,6 +16,7 @@ body {
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
+
 .header,
 .marketing,
 .footer {
@@ -72,7 +73,6 @@ body {
     .container {
         max-width: 730px;
     }
-
     /* Remove the padding we set earlier */
     .header,
     .marketing,
@@ -92,89 +92,99 @@ body {
 
 @import url("http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,700,500italic,900,700italic,900italic");
 
-* { font-family: 'Roboto', sans-serif; line-height:1.2; }
-
-html {font-size : 100%;}
-
-body { background:#333; height:100%; padding:0;}
-
-
-$card-width : 17rem;
-$card-height : $card-width*1.1;
-$card-margin : 0.5rem;
-
-main {
-  background:#d5d5d5;
-  padding : 0.5rem 0.5rem 0 0.5rem;
-  border-radius:0.25rem;
-  box-shadow:0 1px 2px #222;
+* {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
 }
 
+html {
+    font-size: 100%;
+}
+
+body {
+    background: #000;
+    height: 100%;
+    padding: 0;
+}
+
+$card-width: 13rem;
+$card-height: $card-width * 1;
+$card-margin: 0.4rem;
+$gray : #595B60;
+
+main {
+    background: #232426;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 2px #222;
+}
 
 .card {
-  padding: $card-margin $card-margin*3;
-  box-shadow:0 1px 2px #aaa;
-  background:white;
-  margin: 0 $card-margin $card-margin 0;
-  border-radius:$card-margin/2;
-  user-select:none;
-  width: $card-width;
-  height: $card-height;
-  overflow: hidden;
+    padding: $card-margin*4 $card-margin*2;
+    box-shadow: 0 1px 2px #111;
+    background: $gray;
+    margin: 0 $card-margin $card-margin 0;
+    border-radius: $card-margin / 2;
+    user-select: none;
+    width: $card-width;
+    height: $card-height;
+    overflow: hidden;
+    color : $gray-lighter;
 }
 
 .card-width-2 {
-  width: 2 * $card-width + $card-margin;
+    width: 2 * $card-width + $card-margin;
+    padding-left: $card-margin*2;
+    padding-right: $card-margin*2;
 }
 
 .card-height-2 {
-  height: 2 * $card-height + $card-margin;
+    height: 2 * $card-height + $card-margin;
+    padding-top: $card-margin*10;
+    padding-bottom: $card-margin*10;
 }
 
-
 .card h1 {
-  font-size:2rem;
-  font-weight:400;
-  margin-top:0.5rem;
-  text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+    text-align: center;
 }
 
 .card h2 {
-  font-size:.9rem;
-  line-height:1.5;
-  color:gray;
-  font-weight:400;
-  margin-top:0;
-  text-align: center;
+    font-size: .9rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-top: 0;
+    text-align: center;
 }
 
 /**** Isotope transitions ****/
 
 .isotope,
 .isotope .isotope-item {
-  /* change duration value to whatever you like */
-  -webkit-transition-duration: 0.3s;
-     -moz-transition-duration: 0.3s;
-      -ms-transition-duration: 0.3s;
-       -o-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+    /* change duration value to whatever you like */
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 .isotope {
-  -webkit-transition-property: height, width;
-     -moz-transition-property: height, width;
-      -ms-transition-property: height, width;
-       -o-transition-property: height, width;
-          transition-property: height, width;
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
 }
 
-
 .isotope .isotope-item {
-  -webkit-transition-property: -webkit-transform, opacity;
-     -moz-transition-property:    -moz-transform, opacity;
-      -ms-transition-property:     -ms-transform, opacity;
-       -o-transition-property:      -o-transform, opacity;
-          transition-property:         transform, opacity;
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -ms-transition-property: -ms-transform, opacity;
+    -o-transition-property: -o-transform, opacity;
+    transition-property: transform, opacity;
 }
 
 /**** disabling Isotope CSS3 transitions ****/
@@ -182,9 +192,25 @@ main {
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
-  -webkit-transition-duration: 0s;
-     -moz-transition-duration: 0s;
-      -ms-transition-duration: 0s;
-       -o-transition-duration: 0s;
-          transition-duration: 0s;
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -ms-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
 }
+
+/**** WIDGETS ****/
+
+// Number
+
+.card.card-type-number {
+  background-color : #DD5050;
+}
+
+widget-number h3 {
+  text-align: center;
+  font-size: 4rem;
+  color : #FFF;
+  font-weight: 900;
+}
+

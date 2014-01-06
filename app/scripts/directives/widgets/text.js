@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('dashApp')
-  .directive('widgetText', function($timeout) {
+  .directive('widgetText', ['$timeout',function($timeout) {
     return {
       scope: {
         data: '='
@@ -12,4 +12,4 @@ angular.module('dashApp')
 
       }
     };
-  });
+  }]);

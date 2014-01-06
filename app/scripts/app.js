@@ -4,7 +4,8 @@ angular.module('dashApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'isotope'
 ])
   .config(function ($routeProvider) {
     $routeProvider

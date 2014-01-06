@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('dashApp')
-  .directive('widgetNumber', function($timeout) {
+  .directive('widgetNumber', ['$timeout',function($timeout) {
     return {
       scope: {
         data: '='
@@ -15,9 +15,9 @@ angular.module('dashApp')
         function scheduleUpdate() {
           // save the timeoutId for canceling
           timeoutId = $timeout(function() {
-            scope.data.value = Math.floor((Math.random() * 10) + 1);
+            scope.data.value = Math.floor((Math.random() * 1000) + 1);
             scheduleUpdate(); // schedule the next update
-          }, 1000);
+          }, Math.floor((Math.random() * 1500) + 100));
         }
 
         element.on('$destroy', function() {
@@ -28,4 +28,4 @@ angular.module('dashApp')
 
       }
     };
-  });
+  }]);
