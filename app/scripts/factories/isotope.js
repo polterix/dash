@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('isotope', [])
 	.factory('isotopeService', ['$document', '$q', '$rootScope',
 		function($document, $q, $rootScope) {
@@ -16,8 +18,10 @@ angular.module('isotope', [])
 			scriptTag.async = true;
 			scriptTag.src = 'bower_components/isotope/jquery.isotope.js';
 			scriptTag.onreadystatechange = function() {
-				if (this.readyState == 'complete') onScriptLoad();
-			}
+				if (this.readyState === 'complete') {
+					onScriptLoad();
+				}
+			};
 			scriptTag.onload = onScriptLoad;
 
 			var s = $document[0].getElementsByTagName('body')[0];

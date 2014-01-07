@@ -13,10 +13,10 @@ angular.module('dashApp')
       var width = Math.floor((Math.random() * 2) + 1);
       var height = Math.floor((Math.random() * 2) + 1);
       $scope.cards.push({
-        "id": id,
-        "title": "Test " + id,
-        "width": width,
-        "height": height
+        'id': id,
+        'title': 'Test ' + id,
+        'width': width,
+        'height': height
       });
     };
 

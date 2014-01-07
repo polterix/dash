@@ -10,14 +10,15 @@ angular.module('dashApp')
         restrict: 'E',
         replace: true,
         templateUrl: 'views/board.html',
-        link: function(scope, element, attrs) {
-          
+        transclude: true,
+        link: function(scope, element) {
+
           // Attente du chargement du script isotope.js
-          isotopeService.isotope().then(function(isotope) {
+          isotopeService.isotope().then(function() {
 
             var options = {
               animationEngine: 'best-available',
-              itemSelector: 'section',
+              itemSelector: '.card',
               layoutMode: 'masonry',
               sortAscending: true,
               getSortData: {
@@ -37,9 +38,10 @@ angular.module('dashApp')
                 });
               });
             });
-
           });
-        }
+        },
+
+
       };
     }
   ]);
