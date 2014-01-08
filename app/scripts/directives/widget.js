@@ -13,8 +13,8 @@ angular.module('dashApp')
             $scope.data.type = 'text';
           }
 
-          // TODO : REMPLACER data="card" par data="data" 
-          var st = $element[0].outerHTML.replace(/widget/g, 'widget-' + $scope.data.type);
+          var st = $element[0].outerHTML.replace(/widget/g, 'widget-' + $scope.data.type) + 
+                  '<div class="card-type">{{data.type}}</div>';
           var el = $compile(st)($scope);
           $element.replaceWith(el);
         }

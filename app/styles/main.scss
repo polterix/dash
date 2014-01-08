@@ -159,6 +159,15 @@ main {
     text-align: center;
 }
 
+.card .card-type{
+    position : absolute;
+    color : #DDD;
+    font-size : 0.7rem;
+    padding : 4px;
+    right: 0;
+    bottom:0;
+}
+
 /**** Isotope transitions ****/
 
 .isotope,
@@ -210,6 +219,33 @@ main {
 widget-number h3 {
   text-align: center;
   font-size: 4rem;
+  color : #FFF;
+  font-weight: 900;
+}
+
+// Jauge
+
+.card.card-type-jauge {
+  background-color : #50AA50;
+}
+
+// Chart
+
+.card.card-type-chart {
+  background-color : #5050AA;
+}
+
+// Countdown
+
+.card.card-type-countdown {
+  background-color : #50AAAA;
+      text-align: center;
+
+}
+
+.card widget-countdown h2 {
+  text-align: center;
+  font-size: 1.5rem;
   color : #FFF;
   font-weight: 900;
 }

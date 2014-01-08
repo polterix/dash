@@ -2,29 +2,39 @@
   {
     "id": 0,
     "title": "Cafés",
-    "value" : "12",
+    "value" : "999",
     "suffix": "/j",
     "type": "number"
   },
   {
-    "id": 1,
-    "title": "News",
+    "id": 5,
+    "title": "Exclusif !",
+    "subtitle":"La Fouine remplit entièrement une grille de mots fléchés junior de niveau 1",
     "width": 2,
-    "type": "text"
+    "height": 2,
+    "type": "text",
+    "text" : "Stupeur et étonnement dans l’entourage du rappeur Laouni Mouhid dit La Fouine depuis que ce dernier prétend avoir complété avec succès une grille de mots fléchés issue du dernier numéro du Journal de Mickey. Après une période de doute et plusieurs vérifications de la part d’un membre de l’académie française, l’artiste semble avoir bel et bien fait son entrée dans le cercle très fermé des cruciverbistes."
   },
   {
     "id": 2,
     "title": "Commits",
-    "value" : "342",
+    "value" : "999",
     "suffix": "/h",
     "type": "number"
+  },
+  {
+    "id": 4,
+    "title": "Noël Netscouade",
+    "end" : "2014-01-17 19:00:00",
+    "type" : "countdown",
+    "width" : 2
   },
   {
     "id": 3,
     "title": "Value convergence",
     "width": 2,
     "height": 2,
-    "type": "chart"
+    "type": "jauge"
   },
   {
     "id": 4,
@@ -39,7 +49,8 @@
   },
   {
     "id": 6,
-    "title": "Carte #06"
+    "title": "Carte #06",
+    "type" : "chart"
   },
   {
     "id": 7,
@@ -49,9 +60,10 @@
   {
     "id": 8,
     "title": "Bugs",
-    "value" : "12",
+    "value" : "999",
     "suffix": "/mois",
     "type": "number",
+    "height" : 2,
     "width" : 2
   },
   {
@@ -59,9 +71,5 @@
     "title": "Carte #09",
     "height": 2,
     "width" : 1
-  },
-  {
-    "id": 10,
-    "title": "Carte #10"
   }
 ]

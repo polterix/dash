@@ -9,13 +9,17 @@ angular.module('dashApp')
     });
 
     $scope.addCard = function() {
-      var id = Math.floor((Math.random() * 10) + 1);
-      var width = Math.floor((Math.random() * 2) + 1);
-      var height = Math.floor((Math.random() * 2) + 1);
+      var types = new Array('text', 'jauge', 'number', 'chart'),
+        numbers = new Array(1, 1, 1, 2, 2),
+        id = Math.floor((Math.random() * 10) + 1),
+        width = numbers[Math.floor((Math.random() * types.length) + 1)],
+        height = numbers[Math.floor((Math.random() * types.length) + 1)],
+        type = types[Math.floor((Math.random() * types.length) + 1)];
       $scope.cards.push({
         'id': id,
         'title': 'Test ' + id,
         'width': width,
+        'type': type,
         'height': height
       });
     };
