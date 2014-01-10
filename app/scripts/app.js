@@ -5,6 +5,7 @@ angular.module('dashApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
+  'angularCharts',
   'isotope'
 ])
   .config(function ($routeProvider) {

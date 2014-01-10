@@ -13,7 +13,9 @@
     "angular-route": "~1.2.0",
     "angular-bootstrap": "~0.7.0",
     "angular-ui-layout": "https://github.com/angular-ui/ui-layout.git",
-    "isotope": "~1.5.25"
+    "isotope": "~1.5.25",
+    "animate.css": "~3.0.0",
+    "angular-charts": "*"
   },
   "devDependencies": {
     "angular-mocks": "~1.2.0",

@@ -13,6 +13,8 @@
 
         <!-- build:css({.tmp,app}) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="bower_components/animate.css/animate.css">
+        <link rel="stylesheet" href="bower_components/odometer/themes/odometer-theme-train-station.css">
         <!-- endbuild -->
 </head>
   <body ng-app="dashApp">
@@ -55,6 +57,8 @@
         <script src="bower_components/sass-bootstrap/js/tab.js"></script>
         <script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
         <script src="bower_components/sass-bootstrap/js/popover.js"></script>
+        <script src='bower_components/d3/d3.min.js'></script> 
+        <script src='bower_components/angular-charts/dist/angular-charts.min.js'></script>
         <!-- endbuild -->
 
         <!-- build:js scripts/modules.js -->
@@ -68,6 +72,7 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/factories/isotope.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/filters/countdown.js"></script>
         <script src="scripts/directives/board.js"></script>
         <script src="scripts/directives/widget.js"></script>
         <script src="scripts/directives/widgets/text.js"></script>

@@ -2,55 +2,120 @@
   {
     "id": 0,
     "title": "Cafés",
-    "value" : "999",
+    "value": "999",
     "suffix": "/j",
     "type": "number"
   },
   {
     "id": 5,
     "title": "Exclusif !",
-    "subtitle":"La Fouine remplit entièrement une grille de mots fléchés junior de niveau 1",
+    "subtitle": "La Fouine remplit entièrement une grille de mots fléchés junior de niveau 1",
     "width": 2,
     "height": 2,
     "type": "text",
-    "text" : "Stupeur et étonnement dans l’entourage du rappeur Laouni Mouhid dit La Fouine depuis que ce dernier prétend avoir complété avec succès une grille de mots fléchés issue du dernier numéro du Journal de Mickey. Après une période de doute et plusieurs vérifications de la part d’un membre de l’académie française, l’artiste semble avoir bel et bien fait son entrée dans le cercle très fermé des cruciverbistes."
+    "text": "Stupeur et étonnement dans l’entourage du rappeur Laouni Mouhid dit La Fouine depuis que ce dernier prétend avoir complété avec succès une grille de mots fléchés issue du dernier numéro du Journal de Mickey. Après une période de doute et plusieurs vérifications de la part d’un membre de l’académie française, l’artiste semble avoir bel et bien fait son entrée dans le cercle très fermé des cruciverbistes."
   },
   {
     "id": 2,
     "title": "Commits",
-    "value" : "999",
+    "value": "999",
     "suffix": "/h",
     "type": "number"
   },
   {
     "id": 4,
     "title": "Noël Netscouade",
-    "end" : "2014-01-17 19:00:00",
-    "type" : "countdown",
-    "width" : 2
+    "end": "2014-01-17 19:30:26",
+    "type": "countdown",
+    "width": 2
   },
   {
     "id": 3,
     "title": "Value convergence",
     "width": 2,
     "height": 2,
-    "type": "jauge"
+    "type": "chart",
+    "chartType": "area",
+    "config": {
+      "labels": true,
+      "legend": {
+        "display": false,
+        "position": "left"
+      }
+    },
+    "data": {
+      "series": [
+        "Sales",
+        "Income",
+        "Expense"
+      ],
+      "data": [
+        {
+          "x": "2009",
+          "y": [
+            100,
+            200,
+            300
+          ],
+          "tooltip": "This is a tooltip"
+        },
+        {
+          "x": "2010",
+          "y": [
+            800,
+            500,
+            400
+          ],
+          "tooltip": "This is a tooltip"
+        },
+        {
+          "x": "2011",
+          "y": [
+            540,
+            324,
+            879
+          ],
+          "tooltip": "This is a tooltip"
+        },
+        {
+          "x": "2012",
+          "y": [
+            700,
+            54,
+            324
+          ],
+          "tooltip": "This is a tooltip"
+        },
+        {
+          "x": "2013",
+          "y": [
+            600,
+            300,
+            80
+          ],
+          "tooltip": "This is a tooltip"
+        }
+      ]
+    }
   },
   {
-    "id": 4,
-    "title": "Current valuation",
+    "id": 8,
+    "title": "Noël",
     "width": 2,
-    "type": "jauge"
+    "height": 2,
+    "end": "2014-12-25 00:00:00",
+    "type": "countdown"
   },
   {
     "id": 5,
-    "height": 2,
-    "title": "Carte #05"
+    "height": 1,
+    "title": "Carte #05",
+    "type": "jauge"
   },
   {
     "id": 6,
     "title": "Carte #06",
-    "type" : "chart"
+    "type": "text"
   },
   {
     "id": 7,
@@ -60,16 +125,15 @@
   {
     "id": 8,
     "title": "Bugs",
-    "value" : "999",
+    "value": "999",
     "suffix": "/mois",
     "type": "number",
-    "height" : 2,
-    "width" : 2
+    "width": 2
   },
   {
     "id": 9,
     "title": "Carte #09",
     "height": 2,
-    "width" : 1
+    "width": 1
   }
 ]

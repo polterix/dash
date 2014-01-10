@@ -9,7 +9,6 @@ angular.module('dashApp')
       restrict: 'E',
       templateUrl: 'views/widgets/chart.html',
       link: function(scope, element, attrs) {
-
       }
     };
   }]);
