@@ -1,5 +1,6 @@
 'use strict';
 
+
 angular.module('dashApp')
   .directive('board', ['$timeout', 'isotopeService',
     function($timeout, isotopeService) {

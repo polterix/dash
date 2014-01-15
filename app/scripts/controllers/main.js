@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('dashApp')
-  .controller('MainCtrl', function($scope, $http) {
+  .controller('MainCtrl', function($scope, $http, socket) {
 
     $http.get('data/cards.json').
     success(function(data) {
@@ -27,4 +27,10 @@ angular.module('dashApp')
     $scope.removeCard = function() {
       $scope.cards.pop();
     };
+
+    socket.on('news', function(data) {
+      console.log(data.hello);
+    });
+
+
   });
